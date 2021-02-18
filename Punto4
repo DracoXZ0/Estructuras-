@@ -1,0 +1,33 @@
+package ejercicios;
+import java.util.Scanner;
+
+public class Ejercicios {
+    public static void main(String[] args) {
+
+        double N=0;
+        int M=0;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese la base: ");
+        N=sc.nextDouble();
+        System.out.print("Ingrese la potencia: ");
+        M=sc.nextInt();
+
+        if(M>0){
+        System.out.print(Potencia(N,M));
+        }
+        else{
+          System.out.print("Ingrese un M postivo");
+        }
+
+
+    }
+    public static double Potencia(double n, int m){
+      double resultado = 0;
+
+      resultado = Math.pow(n,m);
+      return resultado;
+
+    }
+}
