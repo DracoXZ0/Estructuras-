@@ -1,0 +1,11 @@
+public static void main(String[] args) {
+  // Demostración con enteros
+  int[] numeros = { 50, 21, 6, 97, 18 };
+  int numeroBuscado = 20;
+  int posicionDeElementoBuscado = existeEnArreglo(numeros, numeroBuscado);
+  if (posicionDeElementoBuscado == -1) {
+    System.out.println("El elemento NO existe en el arreglo");
+  } else {
+    System.out.println("El elemento existe en la posición: " + posicionDeElementoBuscado);
+  }
+}
