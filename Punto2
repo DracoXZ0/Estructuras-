@@ -1,11 +1,29 @@
-public static void main(String[] args) {
-  // Demostración con enteros
-  int[] numeros = { 50, 21, 6, 97, 18 };
-  int numeroBuscado = 20;
-  int posicionDeElementoBuscado = existeEnArreglo(numeros, numeroBuscado);
-  if (posicionDeElementoBuscado == -1) {
-    System.out.println("El elemento NO existe en el arreglo");
-  } else {
-    System.out.println("El elemento existe en la posición: " + posicionDeElementoBuscado);
-  }
+package busquedaDato;
+import java.util.*;
+public class busquedaDato{
+
+    public static void main(String[] args){
+        Scanner leer = new Scanner(System.in);
+        boolean encontrado = false;
+        int arreglo[], i;
+
+        arreglo = new int[5];
+        for(i=0; i<arreglo.length; i++){
+            arreglo[i] = i+1;
+        }
+        System.out.println("Ingrese el valor que desea buscar: ");
+        int BuscarValor = leer.nextInt();
+
+        for(i=0; i<arreglo.length; i++){
+            if(arreglo[i] == BuscarValor){
+                encontrado = true;
+                break;
+            }
+        }
+        if(encontrado == true){
+            System.out.println("El valor " + BuscarValor + " se encuentra en el arreglo");
+        }else{
+            System.out.println("El valor " + BuscarValor + " no se encuentra en el arreglo");
+        }
+    }
 }
