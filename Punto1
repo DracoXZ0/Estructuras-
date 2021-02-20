@@ -1,6 +1,6 @@
 import java.util.*;
-package mayorMenor
-public class mayorMenor {
+package menor
+public class menor {
  
     public static void main(String[] args) {
        
