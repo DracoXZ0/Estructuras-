@@ -1,8 +1,9 @@
+package Triiborec
 import java.io.*; 
   
-class GFG { 
+class Triborec { 
       
-    static int printTribRec(int n) 
+    static int printTriboRec(int n) 
     { 
           
         if (n == 0 || n == 1 || n == 2) 
@@ -11,9 +12,9 @@ class GFG {
         if (n == 3) 
             return 1; 
         else
-            return printTribRec(n - 1) +  
-                   printTribRec(n - 2) + 
-                   printTribRec(n - 3); 
+            return printTriboRec(n - 1) +  
+                   printTriboRec(n - 2) + 
+                   printTriboRec(n - 3); 
     } 
       
     static void printTrib(int n) 
@@ -25,8 +26,8 @@ class GFG {
       
     public static void main(String args[]) 
     { 
-        int n = 10; 
+        int n = 21; 
   
-        printTrib(n); 
+        printTribo(n); 
     } 
 } 
