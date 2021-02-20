@@ -16,9 +16,9 @@ public class Ejercicios {
     }
         }
         if (!bError)
-    System.out.println(sPalabra + " es un PALINDROMO");
+    System.out.println(sPalabra + " es un palindromo");
         else
-    System.out.println(sPalabra + " NO es un palindromo");
+    System.out.println(sPalabra + " no es un palindromo");
     }
  
 }
