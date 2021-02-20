@@ -1,6 +1,6 @@
 import java.util.*;
-
-public class Mayorymenorarray {
+package mayorMenor
+public class mayorMenor {
  
     public static void main(String[] args) {
        
